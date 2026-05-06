@@ -65,7 +65,7 @@ def fmt(n):
  CUT_ORDER_WORKER, CUT_ORDER_PROD, CUT_ORDER_QTY,
  SEW_RECEIPT_ORDER, SEW_RECEIPT_SEWER, SEW_RECEIPT_QTY,
  SEW_DONE_ORDER, SEW_DONE_QTY,
- REPORT_PERIOD) = range(45)
+ REPORT_PERIOD, SEW_DONE_ORDER) = range(46)
 
 def get_worker_by_chat(chat_id):
     ws = db_get("workers", {"chat_id": f"eq.{chat_id}"})
